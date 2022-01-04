@@ -4,6 +4,9 @@ package LinkedLIst;
  * This question has not been finished.
  * */
 public class Problem19 {
+/*
+* solution 1
+* */
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode pointer = new ListNode();
         pointer.next = head;
