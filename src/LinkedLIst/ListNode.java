@@ -1,5 +1,7 @@
 package LinkedLIst;
 
+import java.util.ArrayList;
+
 public class ListNode {
     int val;
     ListNode next;
@@ -19,9 +21,9 @@ public class ListNode {
 
     public void print() {
         ListNode listNode = this;
-        while(listNode!=null){
+        while (listNode != null) {
             System.out.println(listNode.val);
-            listNode=listNode.next;
+            listNode = listNode.next;
         }
     }
 }
