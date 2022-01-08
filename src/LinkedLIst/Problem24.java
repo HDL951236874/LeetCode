@@ -4,9 +4,9 @@ public class Problem24 {
     public ListNode swapPairs(ListNode head) {
         ListNode pointer = head;
         //main
+        int temp;
         while (pointer != null) {
             if (pointer.next==null) break;
-            int temp;
             temp = pointer.next.val;
             pointer.next.val = pointer.val;
             pointer.val = temp;
