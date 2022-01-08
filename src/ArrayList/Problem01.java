@@ -15,16 +15,27 @@ public class Problem01 {
 //        }
 //        return new int[]{};
 //    }
-    public int[] twoSum(int[] nums, int target){
-        HashMap<Integer,Integer> map = new HashMap<>();
-        for(int i=0; i< nums.length;i++){
-            map.put(target-nums[i],i);
-        }
-        for(int i =0;i<nums.length;i++){
-            if (map.containsKey(nums[i])&&i!=map.get(nums[i])){
-                return new int[]{i,map.get(nums[i])};
+    public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer, Integer> hashMap = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (!hashMap.containsKey(target - nums[i])) {
+                hashMap.put(nums[i], i);
+            } else {
+                int[] result = {i, hashMap.get(target - nums[i])};
+                return result;
             }
         }
-        return new int[]{};
+        return null;
+
+        //        HashMap<Integer,Integer> map = new HashMap<>();
+//        for(int i=0; i< nums.length;i++){
+//            map.put(target-nums[i],i);
+//        }
+//        for(int i =0;i<nums.length;i++){
+//            if (map.containsKey(nums[i])&&i!=map.get(nums[i])){
+//                return new int[]{i,map.get(nums[i])};
+//            }
+//        }
+//        return new int[]{};
     }
 }
