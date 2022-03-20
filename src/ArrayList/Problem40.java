@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 import java.util.stream.Collectors;
-
+//TODO: the combination table method
 public class Problem40 {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         if (candidates.length == 0) return new ArrayList<>();
