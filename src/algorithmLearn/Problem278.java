@@ -1,6 +1,7 @@
 package algorithmLearn;
 
 public class Problem278 {
+    public boolean isBadVersion(int n){return true;};
     public int firstBadVersion(int n) {
         if(n == 1 || isBadVersion(1) == true) return 1;
 
