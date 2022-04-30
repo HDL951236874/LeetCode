@@ -15,7 +15,7 @@ public class Problem324 {
         int temp_ = nums[0];
         temp.add(0,temp.get(mid-1));
         temp.add(mid-1,temp_);
-        temp_ = nums[nums.length - 1];
+        temp_ = nums[nums.length    - 1];
         temp.add(nums.length-1,temp.get(mid));
         temp.add(mid,temp_);
         for (int i = 0; i < mid; i++) {
