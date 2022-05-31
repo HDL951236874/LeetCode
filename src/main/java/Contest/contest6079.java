@@ -23,7 +23,6 @@ public class contest6079 {
                     ;
                     String insertion = '$' + String.valueOf(res);
                     if (insertion.contains(".")) {
-
                         int dotIndex = insertion.indexOf('.');
                         int aimLength = dotIndex + 3;
                         while (insertion.length() != aimLength) {
