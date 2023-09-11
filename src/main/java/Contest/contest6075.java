@@ -1,6 +1,5 @@
 package Contest;
 
-import javafx.util.Pair;
 
 import java.util.*;
 

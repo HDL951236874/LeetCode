@@ -1,7 +1,4 @@
 package Contest;
-
-import com.sun.org.apache.xerces.internal.xs.ItemPSVI;
-
 import java.util.*;
 
 public class contest6097 {
