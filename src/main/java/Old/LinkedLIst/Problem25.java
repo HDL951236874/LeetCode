@@ -1,20 +1,20 @@
-package LinkedLIst;
+package Old.LinkedLIst;
 
 // queue can be implemented by the linkedList
 public class Problem25 {
-    public ListNode reverseKGroup(ListNode head, int k) {
-        ListNode pointer = head;
+    public LinkedLIst.ListNode reverseKGroup(LinkedLIst.ListNode head, int k) {
+        LinkedLIst.ListNode pointer = head;
         int flag = 1;
         while (flag == 1) {
             //this is the judgement
-            ListNode temp = head;
-            ListNode inverse = new ListNode(0);
+            LinkedLIst.ListNode temp = head;
+            LinkedLIst.ListNode inverse = new LinkedLIst.ListNode(0);
             for (int i = 0; i < k; i++) {
                 if (temp == null) {
                     flag = 0;
                     break;
                 } else {
-                    ListNode newList = new ListNode(temp.val);
+                    LinkedLIst.ListNode newList = new LinkedLIst.ListNode(temp.val);
                     temp = temp.next;
                     newList.next = inverse.next;
                     inverse.next = newList;
@@ -35,8 +35,9 @@ public class Problem25 {
 
     public static void main(String[] args) {
         Problem25 p = new Problem25();
-        ListNode input = new ListNode(1,new ListNode(2,new ListNode(3,new ListNode(4))));
-        ListNode res = p.reverseKGroup(input,2);
+        LinkedLIst.ListNode input = new LinkedLIst.ListNode(1,new LinkedLIst.ListNode(2,
+                new LinkedLIst.ListNode(3,new LinkedLIst.ListNode(4))));
+        LinkedLIst.ListNode res = p.reverseKGroup(input,2);
         res.print();
     }
 }

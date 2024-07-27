@@ -1,4 +1,4 @@
-package Inorder;
+package Old.Inorder;
 
 public class Problem231 {
     public boolean isPowerOfTwo(int n) {
