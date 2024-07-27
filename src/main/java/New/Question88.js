@@ -13,3 +13,5 @@ var twoSum = function(nums, target) {
     }
 };
 
+var numbers = twoSum([1,2,3],5);
+console.log(numbers);
