@@ -24,5 +24,3 @@ let longestPalindrome = function (s) {
     }
     return res;
 };
-
-longestPalindrome("bb")
